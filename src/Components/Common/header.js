@@ -179,6 +179,8 @@ const canvasanimation = {
   },
 };
 
+//햄버거 메뉴 냅둘지 말지 고민됨.
+
 const Header = () => {
   const navigate = useNavigate();
 
@@ -186,6 +188,7 @@ const Header = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const scrollRef = useRef([]);
 
   const goMain = () => {
     console.log("이동");
