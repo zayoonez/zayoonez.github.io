@@ -6,7 +6,6 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { motion } from "framer-motion";
 import { Variants } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import studioi from "../../assets/studioi.png";
 import HeaderNavBar from "./HeaderNavBar";
 
 const HeaderBlock = styled.div`

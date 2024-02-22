@@ -80,11 +80,11 @@ const Body = function ({ children }) {
       console.log(screenWidth);
       if (screenWidth > 1180) {
         // 추가 너비를 설정
-        setAdditionalWidth((screenWidth - 1180) / 2);
-        setMainWidth(1180);
+        // setAdditionalWidth((screenWidth - 1180) / 2);
+        setMainWidth(screenWidth);
       } else {
         // 1184px 이하일 경우 추가 너비를 0으로 설정
-        setAdditionalWidth(0);
+        // setAdditionalWidth(0);
         setMainWidth(screenWidth);
       }
       setMainHeight(screenHeight);
@@ -108,15 +108,6 @@ const Body = function ({ children }) {
         animate="animate"
         exit="out"
       >
-        <motion.div
-          variants={headermotion}
-          initial="initial"
-          animate="animate"
-          exit="out"
-        >
-          {/* <Header /> */}
-          {/* <HeaderNavBar /> */}
-        </motion.div>
         <ScrollDiv>
           <Spacer />
           <PageBody>
