@@ -1,16 +1,16 @@
 import { useEffect } from "react";
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Title = styled.div`
   margin: 80px;
-// props 이용하여 여러곳에서 사용 가능
+  // props 이용하여 여러곳에서 사용 가능
   ${(props) =>
     props.mainlogo &&
     css`
       font-size: 9rem;
-      margin-left : 80px;
+      margin-left: 80px;
       font-weight: 500;
     `}
   ${(props) =>
@@ -25,7 +25,7 @@ const Title = styled.div`
     css`
       font-size: 1.3rem;
       font-weight: 410;
-      margin:5px;
+      margin: 5px;
     `}
 
     ${(props) =>
@@ -34,7 +34,6 @@ const Title = styled.div`
       font-size: 7rem;
       font-weight: 450;
       margin-left: 80px;
-
     `}
   
     ${(props) =>
@@ -42,12 +41,10 @@ const Title = styled.div`
     css`
       font-size: 70px;
       font-weight: 500;
-      margin-top : 50px;
+      margin-top: 50px;
       margin-top: 30vh;
       margin-left: 20%;
-
     `}
-  
 `;
 
 const Word = styled(motion.span)`
@@ -76,15 +73,14 @@ const characterAnimation = {
   },
 };
 
-
-export default function LetterAnimation({ text, customEase, ...props }) {  
+export default function LetterAnimation({ text, customEase, ...props }) {
   const ctrls = useAnimation();
-  
+
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
-  
+
   useEffect(() => {
     if (inView) {
       ctrls.start("visible");
@@ -102,10 +98,11 @@ export default function LetterAnimation({ text, customEase, ...props }) {
     visible: {},
   };
 
-  
   return (
     <Title {...props} aria-label={text} role="heading">
-      {text.split(" ").map((word, index) => {
+      {text.split(/ +/).map((word, index) => {
+        // 공백이 두 번 이상 나오더라도 모두 분할하여 각각의 공백 문자열로 처리 하기 위한
+        // / +/ (정규표현식, 하나 이상의 공백 처리)
         return (
           <Word
             ref={ref}

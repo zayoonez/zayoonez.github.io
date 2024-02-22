@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Variants } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import studioi from "../../assets/studioi.png";
+import HeaderNavBar from "./HeaderNavBar";
 
 const HeaderBlock = styled.div`
   position: fixed;
@@ -188,7 +189,7 @@ const Header = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const scrollRef = useRef([]);
+  // const scrollRef = useRef([]);
 
   const goMain = () => {
     console.log("이동");
@@ -198,19 +199,19 @@ const Header = () => {
   return (
     <>
       <HeaderBlock>
-        <Wrapper>
-          {/* <div className="logo"><img src={studioi} alt='logo image' className="SocoaLogo" onClick={goMain}/></div> */}
-          <div className="menu">
-            {show ? (
-              <StyledHiX className="MenuIcon" onClick={handleClose} />
-            ) : (
-              <StyledHiMenu className="MenuIcon" onClick={handleShow} />
-            )}
-          </div>
-        </Wrapper>
+        {/* navBar에 scrollRef의 배열을 props로 넘겨줌 */}
+
+        {/* <HeaderNavBar scrollRef={scrollRef} /> */}
+
+        {/* 이동할 nav 컴포넌트에 ref로 넘겨줌
+        <Home ref={scrollRef} />
+        <About ref={scrollRef} />
+        <Skills ref={scrollRef} />
+        <Projects ref={scrollRef} />
+        <ContactNav ref={scrollRef} /> */}
       </HeaderBlock>
 
-      <motion.div
+      {/* <motion.div
         variants={canvasanimation}
         initial="initial"
         animate="animate"
@@ -225,7 +226,8 @@ const Header = () => {
             </CanvasDiv>
           </OffcanvasBody>
         </AnimatedOffcanvas>
-      </motion.div>
+      </motion.div> */}
+      {/* <DetailNav scroll></DetailNav> */}
     </>
   );
 };

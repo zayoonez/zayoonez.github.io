@@ -80,11 +80,10 @@ const SecondPage = styled.div`
 const MainLogoAnimation = () => {
   //useAnimation 이용하여 위에서 아래로 떨어지는 애니메이션 적용
   const { ref, inView } = useInView();
-
   return (
-    <AnimationContainer ref={ref}>
+    <AnimationContainer>
       <LogoContainer>
-        <LetterAnimation mainlogo text="KIM JAYOON" />
+        <LetterAnimation mainlogo text="PORTFOLIO" />
       </LogoContainer>
       <AboutContainer>
         {/* <Line
@@ -96,9 +95,9 @@ const MainLogoAnimation = () => {
           <LetterAnimation
             about
             customEase={[0.4, 0.1, 0.3, 0.9]}
-            text="안녕하세여 김자윤임닷 "
+            text="프론트엔드 개발자 김자윤입니다. "
           />
-          <Link to={"/about"}>
+          {/* <Link to={"/about"}>
             <UnderlinedButton
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -106,7 +105,7 @@ const MainLogoAnimation = () => {
               <LetterAnimation more text="MORE ABOUT US"></LetterAnimation>
               <ArrowImg src={Arrow} />
             </UnderlinedButton>
-          </Link>
+          </Link> */}
         </SecondBox>
       </AboutContainer>
       {/* <Line2
@@ -114,7 +113,6 @@ const MainLogoAnimation = () => {
                 animate={inView ? "visible" : "hidden"}
                 variants={line2Variants}
             ></Line2> */}
-      <SecondPage></SecondPage>
     </AnimationContainer>
   );
 };

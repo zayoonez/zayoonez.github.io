@@ -4,6 +4,10 @@ import Header from "./header";
 import SideBar from "./SideBar";
 import { motion, AnimatePresence } from "framer-motion";
 import ContactButton from "./ContactButton";
+import HeaderNavBar from "./HeaderNavBar";
+
+///일단 sideDiv 지웠음 !!!!!!
+// 그거 만든 이유를 알아보자. 2.6
 
 // const Spacer = styled.div`
 //   height: 4rem;
@@ -19,9 +23,9 @@ const PageBody = styled.div`
   background-color: white;
 `;
 
-const SideDiv = styled.div`
-  width: ${(props) => props.additionalWidth}px;
-`;
+// const SideDiv = styled.div`
+//   width: ${(props) => props.additionalWidth}px;
+// `;
 
 const RealBody = styled.div`
   width: ${(props) => props.mainWidth}px;
@@ -67,6 +71,8 @@ const Body = function ({ children }) {
   const [showing, setShowing] = useState(true);
 
   useEffect(() => {
+    console.log("뭐하는굥?");
+
     // 화면 크기확인
     const handleResize = () => {
       const screenWidth = window.innerWidth;
@@ -108,12 +114,13 @@ const Body = function ({ children }) {
           animate="animate"
           exit="out"
         >
-          <Header />
+          {/* <Header /> */}
+          {/* <HeaderNavBar /> */}
         </motion.div>
         <ScrollDiv>
           <Spacer />
           <PageBody>
-            <SideDiv additionalWidth={additionalWidth} />
+            {/* <SideDiv additionalWidth={additionalWidth} /> */}
             <motion.div
               variants={bodymotion}
               initial="initial"
@@ -130,7 +137,7 @@ const Body = function ({ children }) {
             >
                 <SideBar />
             </motion.div> */}
-            <SideDiv additionalWidth={additionalWidth} />
+            {/* <SideDiv additionalWidth={additionalWidth} /> */}
             <ContactButton />
           </PageBody>
         </ScrollDiv>
