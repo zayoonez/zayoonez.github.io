@@ -13,6 +13,7 @@ const AboutTitle = styled.div`
   text-decoration: underline;
   margin-bottom: 50px;
 `;
+const AboutMe = styled.div``;
 const Boxes = styled.div`
   display: flex;
   flex-direction: row;
@@ -58,7 +59,12 @@ const Home = forwardRef((props, ref) => {
   return (
     <Container ref={(homeRef) => (ref.current[0] = homeRef)}>
       <Body>
-        <AboutTitle>냠냠</AboutTitle>
+        <AboutTitle>ABOUT ME</AboutTitle>
+        <AboutMe>
+          디테일을 중요시합니다. 이를 위해서 동료들과 더 자주, 적극적으로
+          소통하려고하고, 서로 자유롭게 의견을 말하는 환경을 만들기 위해
+          노력합니다.
+        </AboutMe>
         <Boxes>
           <Box>
             <Title>학력</Title>

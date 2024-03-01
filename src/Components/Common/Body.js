@@ -102,12 +102,7 @@ const Body = function ({ children }) {
 
   return (
     <>
-      <motion.div
-        variants={bodyChange}
-        initial="initial"
-        animate="animate"
-        exit="out"
-      >
+      <div>
         <ScrollDiv>
           <Spacer />
           <PageBody>
@@ -132,7 +127,7 @@ const Body = function ({ children }) {
             <ContactButton />
           </PageBody>
         </ScrollDiv>
-      </motion.div>
+      </div>
     </>
   );
 };
