@@ -27,7 +27,7 @@ const SkillSet = styled.div`
 const Skillss = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 20px 0px;
+  margin: 60px 0px;
 `;
 const Skill = styled.div`
   white-space: nowrap;

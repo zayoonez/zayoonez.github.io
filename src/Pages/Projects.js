@@ -2,6 +2,7 @@ import styled from "styled-components";
 import React from "react";
 import Body from "Components/Common/Body";
 import SkillBox from "Components/Common/SkillBox";
+import data from "../projects.json";
 
 const Container = styled.section`
   height: 100vh;
@@ -20,6 +21,11 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   /* width: 50vw; */
+`;
+const DetailContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 65%;
 `;
 const PTitle = styled.div`
   font-weight: bold;
@@ -42,7 +48,7 @@ const PImage = styled.div`
   height: 400px;
   margin-top: 30px;
 `;
-const PStack = styled.div`
+const ForRow = styled.div`
   margin-top: 20px;
   font-weight: normal;
   display: flex;
@@ -55,17 +61,7 @@ const Detail = styled.div`
   /* background-color: gray; */
   margin: 30px;
   font-size: 20px;
-`;
-
-const WhatDidiDo = styled.div`
-  margin-top: 20px;
-  height: 50%;
-  width: 100%;
-  background-color: gray;
-`;
-const A = styled.div`
-  display: flex;
-  flex-direction: row;
+  white-space: pre-line;
 `;
 
 const { forwardRef } = require("react");
@@ -74,36 +70,30 @@ const Projects = forwardRef((props, ref) => {
   return (
     <Container ref={(projectsRef) => (ref.current[3] = projectsRef)}>
       <Body>
-        <PContainer>
-          <Section>
-            <PTitle>STUDIO Eye 웹사이트 개발</PTitle>
-            <Period>
-              2023.03 ~ 2023.06 / Front-end Developer (Front Team Leader)
-            </Period>
-            <PStack>
-              <SkillBox skill="React" />
-              <SkillBox skill="Javascript" />
-              <SkillBox skill="styled-components" />
-            </PStack>
-            <Line />
-          </Section>
-          <Section>
-            <A>
-              <PImage></PImage>
-              <Section>
-                <Detail>
-                  설명 : 스튜디오 아이 기업의 외주를 받아 개발하게 된 기업
-                  포트폴리오 사이트 / 기업 내부 직원들의 일정 및 업무 관리
-                  사이트
-                </Detail>
-                <Detail>
-                  • React.js 에 대해 깊게 이해하게 된 계기가 된 프로젝트 SPA
-                </Detail>
-                <Detail>WhatDidIdo :</Detail>
-              </Section>
-            </A>
-          </Section>
-        </PContainer>
+        {data.projects.map((p) => (
+          <PContainer>
+            <Section>
+              <PTitle>{p.title}</PTitle>
+              <Period>{p.period}</Period>
+              <ForRow>
+                {p.skill.map((s) => (
+                  <SkillBox skill={s} />
+                ))}
+              </ForRow>
+              <Line />
+            </Section>
+            <Section>
+              <ForRow>
+                <PImage></PImage>
+                <DetailContainer>
+                  <Detail>{p.slogan}</Detail>
+                  <Detail>{p.description}</Detail>
+                  <Detail>{p.detail}</Detail>
+                </DetailContainer>
+              </ForRow>
+            </Section>
+          </PContainer>
+        ))}
       </Body>
     </Container>
   );

@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "title": "STUDIO Eye 웹사이트 개발",
+      "period": "2023.03 ~ 2023.06 / Front-end Developer (Front Team Leader)",
+      "skill": ["React", "JavaScript", "styled-components"],
+      "slogan": "MICRO 하게!",
+      "description": "설명 : 스튜디오 아이 기업의 외주를 받아 개발하게 된 기업 포트폴리오 사이트 / 기업 내부 직원들의 일정 및 업무 관리 사이트",
+      "detail": "• React의 SPA 방식에 대해 깊게 이해하게 된 계기가 된 프로젝트\n• Front Team Leader\n• 마이크로한 프로젝트 진행을 위해 초기프론트 아키텍쳐 설계 \n• 코드 재사용성을 위한 컴포넌트 모듈화 \n•AWS-도커를 통한 무중단 배포 경험 \n• framer-motion 라이브러리를이용해 interactive 애니메이션 구현 \n• axios를 이용한 RestAPI웹통신 → 비동기 통신방식에 대한 숙련도 향상 \n• 뷰포트별 반응형웹, 레이아웃 개발 \n• recoil 을 이용한 전역 상태관리 (새로고침 대비)"
+    },
+    {
+      "title": "STUDIO Eye 웹사이트 개발",
+      "period": "2023.03 ~ 2023.06 / Front-end Developer (Front Team Leader)",
+      "skill": ["React", "JavaScript", "styled-components"],
+      "slogan": "MICRO 하게!",
+      "description": "설명 : 스튜디오 아이 기업의 외주를 받아 개발하게 된 기업 포트폴리오 사이트 / 기업 내부 직원들의 일정 및 업무 관리 사이트",
+      "detail": "• React의 SPA 방식에 대해 깊게 이해하게 된 계기가 된 프로젝트\n• Front Team Leader\n• 마이크로한 프로젝트 진행을 위해 초기프론트 아키텍쳐 설계 \n• 코드 재사용성을 위한 컴포넌트 모듈화 \n• AWS-도커를 통한 무중단 배포 경험 \n• framer-motion 라이브러리를이용해 interactive 애니메이션 구현 \n• axios를 이용한 RestAPI웹통신 → 비동기 통신방식에 대한 숙련도 향상 \n• 뷰포트별 반응형웹, 레이아웃 개발 \n• recoil 을 이용한 전역 상태관리 (새로고침 대비)"
+    }
+  ]
+}
