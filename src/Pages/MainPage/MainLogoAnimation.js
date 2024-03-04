@@ -83,7 +83,7 @@ const MainLogoAnimation = () => {
   return (
     <AnimationContainer>
       <LogoContainer>
-        <LetterAnimation mainlogo text="PORTFOLIO" />
+        <LetterAnimation mainlogo text="PORTFOLIO!" />
       </LogoContainer>
       <AboutContainer>
         {/* <Line
