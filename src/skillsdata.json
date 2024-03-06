@@ -3,22 +3,22 @@
     {
       "id": 11,
       "name": "React",
-      "description": "React SPA 프레임워크 사용에 능숙합니다."
+      "description": "React를 이용하여 5개 이상의 프로젝트를 개발하였습니다.\nReact 의 SPA 프레임워크 사용에 능숙하며 컴포넌트 기반 아키텍처를 활용하여 유연하고 모듈화된 코드를 작성할 수 있습니다.\n컴포넌트 분리 개발에 관심이 많습니다."
     },
     {
       "id": 12,
       "name": "JavaScript",
-      "description": "가장 익숙한 언어로, 더 깊게 공부하기 위해 뭐시기 "
+      "description": "가장 익숙한 언어로, ES6 이후의 기능들을 활용하여 프론트엔드 개발에 활용하고 있습니다. 현재는 더 깊게 공부하여 비동기 처리에 대한 이해를 높이고 있습니다."
     },
     {
       "id": 13,
       "name": "TypeScript",
-      "description": "현재 기존 JavaScript 레거시 코드를 마이그레이션하며 공부중인 언어로, 정적 타입 검사를 통해 코드의 안정성이 높아지고 있는 것을 몸소 경험하고 있습니다. "
+      "description": "현재 기존 JavaScript 레거시 코드를 마이그레이션하며 공부중인 언어로, 정적 타입 검사를 통해 코드의 안정성이 높아지고 있는 것을 몸소 경험하고 있습니다."
     },
     {
       "id": 14,
       "name": "React Native",
-      "description": "ReactNative를 이용해 크로스 플랫폼 웹앱을 개발해본 경험이 있습니다."
+      "description": "ReactNative를 이용해 크로스 플랫폼 웹앱(MOIN)을 개발해본 경험이 있습니다."
     },
     {
       "id": 15,
@@ -33,7 +33,12 @@
     {
       "id": 17,
       "name": "Storybook",
-      "description": "코드재사용성...Storybook 을 이용하여 만든 컴포넌트들을 테스트해본 경험이 있습니다. "
+      "description": "React 컴포넌트들을 Storybook을 통해 가시화, 문서화하고 관리하여 개발 효율성을 높일 수 있습니다."
+    },
+    {
+      "id": 18,
+      "name": "Next.js",
+      "description": "!?!?"
     }
   ],
   "CSS": [
