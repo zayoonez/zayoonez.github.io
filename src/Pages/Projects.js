@@ -5,7 +5,7 @@ import SkillBox from "Components/Common/SkillBox";
 import data from "../projects.json";
 
 const Container = styled.section`
-  height: 100vh;
+  /* height: 100vh; */
   background-color: transparent;
 `;
 const PContainer = styled.div`

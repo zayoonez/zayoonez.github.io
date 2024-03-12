@@ -95,8 +95,9 @@ const MainLogoAnimation = () => {
           <LetterAnimation
             about
             customEase={[0.4, 0.1, 0.3, 0.9]}
-            text="프론트엔드 개발자 김자윤입니다. "
+            text="Front-End Developer"
           />
+
           {/* <Link to={"/about"}>
             <UnderlinedButton
               whileHover={{ scale: 1.1 }}

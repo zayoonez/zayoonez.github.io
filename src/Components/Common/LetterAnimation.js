@@ -12,6 +12,7 @@ const Title = styled.div`
       font-size: 9rem;
       margin-left: 80px;
       font-weight: 500;
+      letter-spacing: 20px;
     `}
   ${(props) =>
     props.about &&
@@ -19,6 +20,7 @@ const Title = styled.div`
       font-size: 1.6rem;
       font-weight: 410;
       margin-top: 10px;
+      color: rgb(241, 96, 0);
     `}
     ${(props) =>
     props.more &&

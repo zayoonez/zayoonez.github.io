@@ -16,15 +16,15 @@ import Contact from "Pages/Contact";
 function App() {
   const [showInsertPage, setShowInsertPage] = React.useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowInsertPage(false);
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowInsertPage(false);
+  //   }, 5000);
 
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+  //   return () => {
+  //     clearTimeout(timer);
+  //   };
+  // }, []);
 
   return (
     <>

@@ -3,18 +3,23 @@ import styled from "styled-components";
 
 const HeaderContainer = styled.div`
   position: fixed;
-  top: 50px;
+  top: 0px;
   left: auto;
-  right: 20px;
+  /* right: 20px; */
+  text-align: end;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  /* background-color: rgba(255, 148, 77, 0.5) !important; */
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  z-index: 9999;
 `;
 
 const HeaderBlock = styled.nav`
-  /* right: 0px; */
-  /* margin-right: 20px; */
   width: 100%;
-  background-color: transparent;
-  // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-  z-index: 999;
+  margin-right: 25px;
 `;
 
 const NavButton = styled.button`

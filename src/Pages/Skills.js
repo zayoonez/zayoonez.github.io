@@ -2,6 +2,7 @@ import styled from "styled-components";
 import React from "react";
 import SkillBox from "Components/Common/SkillBox";
 import data from "../skillsdata.json";
+import { motion } from "framer-motion";
 
 const Container = styled.section`
   height: 100vh;
@@ -29,7 +30,7 @@ const Skillss = styled.div`
   flex-direction: row;
   margin: 60px 0px;
 `;
-const Skill = styled.div`
+const Skill = styled(motion.div)`
   white-space: nowrap;
   width: auto;
   padding: 2px 10px;
@@ -61,7 +62,7 @@ const Skills = forwardRef((props, ref) => {
           <SkillCategory>FRONT</SkillCategory>
           {data.Front.map((skill) => (
             <SkillSet key={skill.id}>
-              <Skill>{skill.name}</Skill>
+              <Skill whileHover={{ scale: 1.2 }}>{skill.name}</Skill>
             </SkillSet>
           ))}
         </Skillss>
@@ -69,7 +70,7 @@ const Skills = forwardRef((props, ref) => {
           <SkillCategory>HTML/CSS</SkillCategory>
           {data.CSS.map((skill) => (
             <SkillSet key={skill.id}>
-              <Skill>{skill.name}</Skill>
+              <Skill whileHover={{ scale: 1.2 }}>{skill.name}</Skill>
             </SkillSet>
           ))}
         </Skillss>
@@ -77,7 +78,7 @@ const Skills = forwardRef((props, ref) => {
           <SkillCategory>BACK</SkillCategory>
           {data.Back.map((skill) => (
             <SkillSet key={skill.id}>
-              <Skill>{skill.name}</Skill>
+              <Skill whileHover={{ scale: 1.2 }}>{skill.name}</Skill>
             </SkillSet>
           ))}
         </Skillss>
@@ -85,7 +86,7 @@ const Skills = forwardRef((props, ref) => {
           <SkillCategory>ETC</SkillCategory>
           {data.ETC.map((skill) => (
             <SkillSet key={skill.id}>
-              <Skill>{skill.name}</Skill>
+              <Skill whileHover={{ scale: 1.2 }}>{skill.name}</Skill>
             </SkillSet>
           ))}
         </Skillss>

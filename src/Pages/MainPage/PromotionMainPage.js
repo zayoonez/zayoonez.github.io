@@ -10,7 +10,7 @@ import About from "Pages/About";
 import Skills from "Pages/Skills";
 import Projects from "Pages/Projects";
 import Contact from "Pages/Contact";
-
+import Me from "../../assets/images/me.jpg";
 import HeaderNavBar from "Components/Common/HeaderNavBar";
 
 const ProgressBar = styled(motion.div)`
@@ -21,7 +21,13 @@ const ProgressBar = styled(motion.div)`
   height: 10px;
   background-color: gray;
 `;
-
+const Img = styled.img`
+  position: absolute;
+  right: 0px;
+  top: 100px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+`;
 const LogoContainer = styled.div`
   height: 100vh;
   display: flex;
@@ -47,11 +53,9 @@ const PromotionMainpage = () => {
         <HeaderNavBar scrollRef={scrollRef} />
 
         {/* <LogoContainer> */}
-
-        <MainLogoAnimation />
+        <Home ref={scrollRef} />
 
         {/* 이동할 nav 컴포넌트에 ref로 넘겨줌 */}
-        <Home ref={scrollRef} />
         <About ref={scrollRef} />
         <Skills ref={scrollRef} />
         <Projects ref={scrollRef} />
