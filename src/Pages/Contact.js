@@ -336,7 +336,7 @@ const Contact = forwardRef((props, ref) => {
   return (
     <Container ref={(contactRef) => (ref.current[4] = contactRef)}>
       <Body>
-        <LetterAnimation contact text="CONTACT US!"></LetterAnimation>
+        <LetterAnimation contact text="CONTACT ME!"></LetterAnimation>
         <FormBlock onSubmit={handleSubmit}>
           <FormBlockLeft>
             <RadioTitle>프로젝트 카테고리</RadioTitle>
