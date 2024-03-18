@@ -1,3 +1,6 @@
+next.js 를 이용한 포트폴리오 사이트입니다. 
+화면 UI 부터 모든 기능을 직접 구현했습니다. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
